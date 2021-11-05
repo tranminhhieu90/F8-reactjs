@@ -4,7 +4,7 @@ I - useEffect
 
 - Callback luôn được gọi sau khi component được mounted
 - Clean up function luôn được gọi trước khi component được unmount
-- Cleanup function luôn được gọi trước khi component được gọi (trừ lần mounted)
+- Cleanup function luôn được gọi trước khi callback được gọi (trừ lần mounted)
 
 ---
 
