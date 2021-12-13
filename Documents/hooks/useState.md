@@ -17,7 +17,10 @@ setCounter(counter + 1)
 setCounter(counter + 1)
 setCounter(counter + 1)
 }
-// khi click thì giá trị của counter vẫn chỉ tăng lên 1.
+// khi click thì giá trị của counter vẫn chỉ tăng lên 1. do React lên lịch trình.
+
+
+
 const handleIncrease = () => {
 setCounter(prevState => prevState + 1)
 setCounter(prevState => prevState + 1)
