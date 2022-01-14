@@ -1,0 +1,36 @@
+https://viblo.asia/p/seo-tren-website-su-dung-reactjs-p2-maGK7p6LZj2
+
+I- SPA:
+Không yêu cầu tải lại trang trong quá trình sử dụng
+Có duy nhất 1 trang index.html
+Phần lớn các tài nguyên được tải trong lần đầu.
+Trang chỉ tải thêm dữ liệu mới khi cần.
+Source FE riêng biệt dễ triển khai.
+Không thân thiện với SEo bởi vì:
+Phụ thuộc hoàn toàn vào javascript
+
+
+II - MPA:
+Chậm hơn khi sử dụng.
+có nhiều trang .html
+Tải lại trang trong quá trình sử dụng.
+Luôn tải lại toàn bộ trang khi truy cập và chuyển hướng.
+FE và BE phụ thuộc nhiều hơn, được đặt trong cùng một dự án.
+Có thể không cần javascript
+
+III - SEO là gì:
+- SEO viết tắt của  Search Engine Optimization tối ưu hoá công cụ tìm kiếm.
+Là một quy trình nâng cao thứ hạng của website trên các công cụ tìm kiếm để người dùng có 
+thể tìm kiếm thấy trang web dễ dang hơn bằng kết quả tìm kiếm.
+- SEO hoạt dộng như thế nào?
+Ở các website thông thường, HTML sẽ được render trên server và trả về cho browser nội dung hầu như là html/css
+Googlebot sẽ crawl nội dung của html của link và index nội dung này phục vụ cho việc tìm kiếm.
+
+_ tuy nhiên với các ứng dụng SPA khi nội dụng render ngắn gọn và chit có 1 thẻ div id = root 
+điều này hoàn toàn không có các nọi dung phục vụ cho việc tìm kiếm.
+
+- Thông thường, cách xử lý vấn đề SEO cho ứng dụng viết bằng Javascript đó là render 
+nội dung HTML trên server trước khi trả về cho Browser. 
+Có nghĩa là thay vì trả về nội dung reference đến file .js như ở ví dụ trên, 
+và file .js sẽ render ra HTML ở trình duyệt, thì trên server sẽ render 
+ra HTML và trả về luôn mã HTML cho Googlebot có thể đọc được và index nội dung

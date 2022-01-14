@@ -13,7 +13,7 @@ videoREf.current.pause()
 return (
 
 <div>
-<Video/>
+<Video ref={videoRef}/>
 <button>Play<button>
 <button>Pause<button>
 </div>
